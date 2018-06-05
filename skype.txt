@@ -1,0 +1,2 @@
+rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm;
+yum localinstall http://download.skype.com/linux/skype-4.3.0.37-fedora.i586.rpm;

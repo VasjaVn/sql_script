@@ -1,0 +1,27 @@
+JPDA port 8000 is already used. Will try to use any free port for debugging
+CompilerOracle: exclude jregex/Pretokenizer.next
+Listening for transport dt_socket at address: 36665
+Attempt to download latest dump file
+Traceback (most recent call last):
+  File "/home/lee/play-1.2.7.2/play", line 155, in <module>
+      status = cmdloader.commands[play_command].execute(command=play_command, app=play_app, args=remaining_args, env=play_env, cmdloader=cmdloader)
+        File "/home/lee/microfinance/modules/pg/commands.py", line 230, in execute
+            load_sql_dump(app, args, kargs)
+              File "/home/lee/microfinance/modules/pg/commands.py", line 173, in load_sql_dump
+                  fresh_dump(dump_file, dump)
+                    File "/home/lee/microfinance/modules/pg/commands.py", line 105, in fresh_dump
+                        headinfo = urllib2.urlopen(request).info()
+                          File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+                              return opener.open(url, data, timeout)
+                                File "/usr/lib64/python2.7/urllib2.py", line 431, in open
+                                    response = self._open(req, data)
+                                      File "/usr/lib64/python2.7/urllib2.py", line 449, in _open
+                                          '_open', req)
+                                            File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+                                                result = func(*args)
+                                                  File "/usr/lib64/python2.7/urllib2.py", line 1244, in http_open
+                                                      return self.do_open(httplib.HTTPConnection, req)
+                                                        File "/usr/lib64/python2.7/urllib2.py", line 1214, in do_open
+                                                            raise URLError(err)
+                                                            urllib2.URLError: <urlopen error [Errno 111] Connection refused>
+                                                            
